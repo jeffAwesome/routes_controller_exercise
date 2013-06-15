@@ -1,5 +1,31 @@
 # Routes, Controllers & Views Oh My
 
+Started GET "/users" for 127.0.0.1 at 2013-06-15 16:41:04 -0500
+Processing by UsersController#index as HTML
+  User Load (0.9ms)  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (91.6ms)
+Completed 200 OK in 102ms (Views: 96.4ms | ActiveRecord: 0.9ms)
+
+
+
+HTTP verb used in this request: GET
+URL: /users
+
+Controller Name: UsersController
+Controller Action: index (inside the users view)
+View FIle Name: users/index.html.erb
+Layout File Name: layouts/application
+Response Code of the request:  200 
+
+
+THe new lines are to show what was rendered and how long it took.
+THe second new line shows the response code and how long it took in general 
+as well as showing how long it took to reder the views and the active record
+db information.
+
+
+
+
 ## What?
 
 Last week we built pure ruby views without touching the database. This week we will pull together ruby generated views and database stored content using rails. We will then create new views and routes to add data to our database with web forms. Submission is the same as last week, and directions are below.
